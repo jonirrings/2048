@@ -1,0 +1,8 @@
+language: rust
+rust:
+  - nightly
+cache: cargo
+before_install: 
+  - rustup target add wasm32-unknown-unknown --toolchain nightly
+script:
+  - cargo build --verbose --release --target wasm32-unknown-unknown
