@@ -4,5 +4,6 @@ rust:
 cache: cargo
 before_install: 
   - rustup target add wasm32-unknown-unknown --toolchain nightly
+  - cargo install --git https://github.com/alexcrichton/wasm-gc
 script:
   - cargo build --verbose --release --target wasm32-unknown-unknown
