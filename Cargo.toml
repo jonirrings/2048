@@ -4,3 +4,4 @@ version = "0.1.0"
 authors = ["Jonir Rings <peterpuyi@live.cn>"]
 
 [dependencies]
+wasm-gc = { git = "https://github.com/alexcrichton/wasm-gc" }
