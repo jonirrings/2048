@@ -1,17 +1,11 @@
-import type { PageProps, Metadata } from 'rari'
-import ServerTime from '@/components/ServerTime'
-import Welcome from '@/components/Welcome'
+import type { PageProps, Metadata } from "rari";
+import { Game } from "@/components/game/Game";
 
 export default function HomePage(_params: PageProps) {
-  return (
-    <div className="space-y-8">
-      <Welcome />
-      <ServerTime />
-    </div>
-  )
+  return <Game />;
 }
 
 export const metadata: Metadata = {
-  title: 'Home | 2048',
-  description: 'Welcome to your new rari application',
-}
+  title: "2048 Game",
+  description: "A feature-rich 2048 game with multiple animation modes and controls",
+};

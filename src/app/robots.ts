@@ -1,10 +1,10 @@
-import type { Robots } from 'rari'
+import type { Robots } from "rari";
 
 export default function robots(): Robots {
   return {
     rules: {
-      userAgent: '*',
-      allow: '/',
+      userAgent: "*",
+      allow: "/",
     },
-  }
+  };
 }

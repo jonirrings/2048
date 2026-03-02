@@ -3,11 +3,11 @@
     "target": "ES2023",
     "jsx": "react-jsx",
     "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "types": ["@webgpu/types"],
     "useDefineForClassFields": true,
     "module": "ESNext",
     "moduleResolution": "bundler",
     "paths": {
-      "*": ["./*"],
       "@/*": ["./src/*"]
     },
     "resolveJsonModule": true,
