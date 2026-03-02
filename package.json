@@ -1,0 +1,33 @@
+{
+  "name": "2048",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Runtime Accelerated Rendering Infrastructure (rari) application",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "build": "rari build",
+    "dev": "rari dev",
+    "start": "rari start",
+    "deploy:railway": "rari deploy railway",
+    "deploy:render": "rari deploy render",
+    "clean": "rm -rf dist",
+    "typecheck": "tsgo"
+  },
+  "dependencies": {
+    "rari": "latest",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.1",
+    "@types/node": "^25.3.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@typescript/native-preview": "^7.0.0-dev.20260301.1",
+    "rolldown-vite": "^7.3.1",
+    "tailwindcss": "^4.2.1"
+  }
+}
